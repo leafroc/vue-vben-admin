@@ -1,18 +1,12 @@
 {
-  "name": "vben-admin-monorepo",
+  "name": "drip-pro",
   "version": "5.5.3",
   "private": true,
   "keywords": [
-    "monorepo",
-    "turbo",
-    "vben",
-    "vben admin",
-    "vben pro",
-    "vue",
-    "vue admin",
-    "vue vben admin",
-    "vue vben admin pro",
-    "vue3"
+    "SAAS",
+    "多租户",
+    "收银系统",
+    "商城小程序"
   ],
   "homepage": "https://github.com/vbenjs/vue-vben-admin",
   "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
@@ -30,8 +24,6 @@
     "build:antd": "pnpm run build --filter=@vben/web-antd",
     "build:docker": "./scripts/deploy/build-local-docker-image.sh",
     "build:docs": "pnpm run build --filter=@vben/docs",
-    "build:ele": "pnpm run build --filter=@vben/web-ele",
-    "build:naive": "pnpm run build --filter=@vben/web-naive",
     "build:play": "pnpm run build --filter=@vben/playground",
     "changeset": "pnpm exec changeset",
     "check": "pnpm run check:circular && pnpm run check:dep && pnpm run check:type && pnpm check:cspell",
@@ -44,8 +36,6 @@
     "dev": "turbo-run dev",
     "dev:antd": "pnpm -F @vben/web-antd run dev",
     "dev:docs": "pnpm -F @vben/docs run dev",
-    "dev:ele": "pnpm -F @vben/web-ele run dev",
-    "dev:naive": "pnpm -F @vben/web-naive run dev",
     "dev:play": "pnpm -F @vben/playground run dev",
     "format": "vsh lint --format",
     "lint": "vsh lint",
@@ -99,7 +89,7 @@
     "node": ">=20.10.0",
     "pnpm": ">=9.12.0"
   },
-  "packageManager": "pnpm@9.15.5",
+  "packageManager": "pnpm@9.15.2",
   "pnpm": {
     "peerDependencyRules": {
       "allowedVersions": {
